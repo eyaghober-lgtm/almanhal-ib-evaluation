@@ -1,0 +1,36 @@
+{
+  "gradeA": 90,
+  "gradeB": 80,
+  "gradeC": 70,
+  "roles": [
+    { "ar": "مشرف", "en": "Supervisor" },
+    { "ar": "نائب المدير", "en": "Vice principal" },
+    { "ar": "رئيس التدقيق", "en": "Head of audit" },
+    { "ar": "منسق المرحلة", "en": "Coordinator" },
+    { "ar": "معلم (زيارة زميل)", "en": "Teacher (peer visit)" },
+    { "ar": "أخرى", "en": "Other" }
+  ],
+  "branches": [
+    { "ar": "المنهل - الريان", "en": "Manhal Al Rayan" },
+    { "ar": "المنهل - المربع", "en": "Manhal Al Murabaa" },
+    { "ar": "المنهل - التعاون", "en": "Manhal Al Taawn" }
+  ],
+  "subjects": [
+    { "ar": "الرياضيات", "en": "Mathematics" },
+    { "ar": "العلوم", "en": "Science" },
+    { "ar": "الكيمياء", "en": "Chemistry" },
+    { "ar": "الفيزياء", "en": "Physics" },
+    { "ar": "الأحياء", "en": "Biology" },
+    { "ar": "علم البيئة", "en": "Ecology" },
+    { "ar": "اللغة الإنجليزية", "en": "English" },
+    { "ar": "اللغة العربية", "en": "Arabic Language" },
+    { "ar": "التربية الإسلامية", "en": "Islamic Education" },
+    { "ar": "الدراسات الاجتماعية", "en": "Social Studies" },
+    { "ar": "علوم الحاسب", "en": "Computer Science" },
+    { "ar": "التربية البدنية", "en": "Physical Education" },
+    { "ar": "الفنون", "en": "Art" }
+  ],
+  "evaluators": [],
+  "teachers": [],
+  "tmeta": {}
+}

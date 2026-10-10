@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إعداد القوائم | مدارس المنهل</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b1f4d">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a href="index.html"><img class="logo" src="assets/logo.png" alt="Al-Manhal Schools · مدارس المنهل"></a>
+  <nav>
+    <a href="index.html" class="opt" data-i18n="navHome">الرئيسية</a>
+    <a href="index.html#history" data-i18n="navHistory">تقييماتي</a>
+    <a href="setup.html" class="on opt" data-i18n="navSetup">⚙ الإعداد</a>
+    <button class="lang" data-lang>English</button>
+  </nav>
+</div></header>
+
+<main><div class="wrap">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:16px">
+    <div><h2 data-i18n="setupTitle">إعداد القوائم</h2><p class="sub" style="margin:0" data-i18n="setupText"></p></div>
+    <a class="btn o sm" href="index.html" data-i18n="toForm">← الرجوع للتقييم</a>
+  </div>
+  <div class="lists" id="lists"></div>
+
+  <div class="lists mt">
+    <div class="card lcard"><div class="lh"><div class="ico">🎯</div><h3 data-i18n="gradesTitle"></h3></div>
+      <div class="addrow"><div class="f" style="flex:1"><label data-i18n="gradeA"></label><input type="number" id="gA" min="2" max="100"></div><div class="f" style="flex:1"><label data-i18n="gradeB"></label><input type="number" id="gB" min="1" max="99"></div><div class="f" style="flex:1"><label data-i18n="gradeCLbl"></label><input type="number" id="gC" min="1" max="98"></div></div>
+      <p class="sub" style="margin:10px 0 0;font-size:.82rem">A · B · C → Role-model · On track · Growing · Needs priority support</p></div>
+    <div class="card lcard"><div class="lh"><div class="ico">🚀</div><h3 data-i18n="publishTitle"></h3></div>
+      <p class="sub" data-i18n="publishText" style="font-size:.88rem"></p>
+      <div class="addrow"><button class="btn p sm" id="dl" data-i18n="dlConfig"></button><button class="btn o sm" id="imp" data-i18n="impConfig"></button><input type="file" id="impFile" accept=".json" hidden><button class="btn d sm" id="reset" data-i18n="resetLocal"></button></div></div>
+  </div>
+</div></main>
+<footer><div class="wrap" data-i18n="footer"></div></footer>
+<script src="assets/core.js"></script>
+<script src="assets/setup.js"></script>
+</body>
+</html>

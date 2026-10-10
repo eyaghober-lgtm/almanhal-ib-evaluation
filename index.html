@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تقييم الزيارة الصفية IB | مدارس المنهل</title>
+<meta name="description" content="IB Classroom Evaluation · Al-Manhal Schools · تقييم الزيارة الصفية IB">
+<link rel="icon" href="assets/logo.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b1f4d">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="IB Evaluation">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a href="index.html" data-go="welcome"><img class="logo" src="assets/logo.png" alt="Al-Manhal Schools · مدارس المنهل"></a>
+  <nav>
+    <a href="#" data-go="welcome" class="on opt" data-i18n="navHome">الرئيسية</a>
+    <a href="#" data-go="history" data-i18n="navHistory">تقييماتي</a>
+    <a href="setup.html" class="opt" data-i18n="navSetup">⚙ الإعداد</a>
+    <button class="lang" data-lang>English</button>
+  </nav>
+</div></header>
+
+<!-- first screen -->
+<section id="v-welcome">
+  <div class="hero"><div class="wrap">
+    <div>
+      <img class="logo-big" src="assets/logo-white.png" alt="Al-Manhal Schools · مدارس المنهل">
+      <span class="tag" data-i18n="heroTag">برنامج السنوات المتوسطة MYP</span>
+      <h1 data-i18n="heroTitle">قيّم الحصة بمعايير الـ IB في دقائق</h1>
+      <p class="lead" data-i18n="heroText"></p>
+      <div class="chips"><span class="chip" data-i18n="chip1"></span><span class="chip" data-i18n="chip2"></span><span class="chip" data-i18n="chip3"></span><span class="chip" data-i18n="chip4"></span></div>
+      <div class="cta">
+        <a href="#" class="btn p big" data-go="form" data-new="1" data-i18n="start">ابدأ التقييم</a>
+        <a href="#" class="btn g big" data-go="form" id="resumeBtn" hidden data-i18n="resume">متابعة المسودة</a>
+        <button class="btn g big" data-install data-i18n="install"></button>
+      </div>
+      <p class="fine" data-i18n="noLogin"></p>
+    </div>
+    <aside class="hero-card">
+      <h3 data-i18n="howTitle">كيف تعمل؟</h3>
+      <ol>
+        <li><i>1</i><div><b data-i18n="how1t"></b><span data-i18n="how1"></span></div></li>
+        <li><i>2</i><div><b data-i18n="how2t"></b><span data-i18n="how2"></span></div></li>
+        <li><i>3</i><div><b data-i18n="how3t"></b><span data-i18n="how3"></span></div></li>
+        <li><i>4</i><div><b data-i18n="how4t"></b><span data-i18n="how4"></span></div></li>
+      </ol>
+      <div class="accred"><span class="ib"><img src="assets/ib-myp.png" alt="IB Middle Years Programme"></span><img class="cg" src="assets/cognia.png" alt="Cognia"><small data-i18n="accred"></small></div>
+    </aside>
+  </div></div>
+</section>
+
+<!-- the evaluation -->
+<main id="app" hidden><div class="wrap">
+  <div id="v-form" hidden>
+    <div id="stepper"></div>
+    <div id="panel" class="card panel"></div>
+    <div class="bar-actions">
+      <div class="mring" id="ring"><div id="ringTxt">0%</div></div>
+      <div class="info"><b id="barTitle"></b><span id="barNote"></span></div>
+      <button class="btn g" id="btnBack" hidden data-i18n="back">السابق</button>
+      <button class="btn p" id="btnNext">التالي</button>
+    </div>
+  </div>
+  <div id="v-result" hidden></div>
+  <div id="v-history" hidden></div>
+  <div id="v-day" hidden></div>
+</div></main>
+
+<footer><div class="wrap" data-i18n="footer">مدارس المنهل · American Diploma</div></footer>
+<section id="report" aria-hidden="true"></section>
+<script src="assets/core.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
